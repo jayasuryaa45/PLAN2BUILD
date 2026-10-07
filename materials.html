@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material Estimator - Plan2Build</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🏗️ Plan2Build</a>
+            <ul class="nav-links" id="nav-links"></ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Material Estimator</h2>
+        <div class="form-group">
+            <label for="builtUpArea">Built-up Area (sq.ft):</label>
+            <input type="number" id="builtUpArea" placeholder="e.g. 1200">
+        </div>
+        <button type="button" class="btn-primary" id="calcMaterialsBtn">Calculate Materials</button>
+
+        <div class="cards-grid" id="materialResults" style="display:none; margin-top:2rem;">
+            <div class="data-card"><h4>Cement</h4><div class="value" id="resCement">0</div></div>
+            <div class="data-card"><h4>Sand</h4><div class="value" id="resSand">0</div></div>
+            <div class="data-card"><h4>Bricks</h4><div class="value" id="resBricks">0</div></div>
+            <div class="data-card"><h4>Steel</h4><div class="value" id="resSteel">0</div></div>
+            <div class="data-card"><h4>Aggregate</h4><div class="value" id="resAggregate">0</div></div>
+            <div class="data-card"><h4>Tiles</h4><div class="value" id="resTiles">0</div></div>
+            <div class="data-card"><h4>Paint</h4><div class="value" id="resPaint">0</div></div>
+        </div>
+
+        <p style="margin-top: 2rem; font-size: 0.85rem; color: #64748b;">
+            <em>Note: These are approximate estimates for preliminary planning only. Actual material quantities depend on structural design, soil conditions, and specs. Consult a qualified engineer before construction.</em>
+        </p>
+    </div>
+
+   <footer>
+        <div class="footer-container">
+            <!-- Brand Column -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span>P2B</span> Plan2Build
+                </div>
+                <p>Award-winning interior design studio transforming residential and commercial spaces across India. From concept to completion, we bring your vision to life.</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank" title="Instagram">📷</a>
+                    <a href="#" target="_blank" title="Pinterest">📌</a>
+                    <a href="#" target="_blank" title="LinkedIn">💼</a>
+                    <a href="#" target="_blank" title="YouTube">▶️</a>
+                </div>
+            </div>
+
+            <!-- Company Links Column -->
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="guide.html">Our Process / Guide</a></li>
+                    <li><a href="cost.html">Pricing Guide</a></li>
+                    <li><a href="planner.html">House Planner</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Get in Touch Column -->
+            <div class="footer-col">
+                <h4>Get in Touch</h4>
+                <p>hello@plan2build.in</p>
+                <p>+91 98765 43210</p>
+                <p>150A, Kaliamman Koil Street, Virugambakkam, Chennai, Tamil Nadu 600092</p>
+                <a href="https://wa.me/919030663409" target="_blank" class="whatsapp-link">
+                    💬 Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Plan2Build. Community Service Project (CSP). All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

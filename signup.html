@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Plan2Build</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🏗️ Plan2Build</a>
+            <ul class="nav-links" id="nav-links"></ul>
+        </nav>
+    </header>
+
+    <div class="container" style="max-width: 500px;">
+        <h2>Create Your Account</h2>
+        <form id="signupForm">
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="signupEmail">Email Address</label>
+                <input type="text" id="signupEmail" placeholder="e.g. jayasri@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile Number (10 digits)</label>
+                <input type="text" id="mobile" placeholder="e.g. 9876543210" maxlength="10">
+            </div>
+            <div class="form-group">
+                <label for="signupPassword">Password (Min 6 chars & @)</label>
+                <div style="position: relative;">
+                    <input type="password" id="signupPassword" placeholder="Enter password">
+                    <button type="button" id="togglePass" style="position: absolute; right: 5px; top: 5px; width: auto; padding: 0.5rem; background: #ddd; color: #333; font-size: 0.8rem;">Show</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Re-enter password">
+            </div>
+            <button type="submit" class="btn-primary">Create Account</button>
+        </form>
+        <p style="text-align: center; margin-top: 1rem;">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+<footer>
+        <div class="footer-container">
+            <!-- Brand Column -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span>P2B</span> Plan2Build
+                </div>
+                <p>Award-winning interior design studio transforming residential and commercial spaces across India. From concept to completion, we bring your vision to life.</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank" title="Instagram">📷</a>
+                    <a href="#" target="_blank" title="Pinterest">📌</a>
+                    <a href="#" target="_blank" title="LinkedIn">💼</a>
+                    <a href="#" target="_blank" title="YouTube">▶️</a>
+                </div>
+            </div>
+
+            <!-- Company Links Column -->
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="guide.html">Our Process / Guide</a></li>
+                    <li><a href="cost.html">Pricing Guide</a></li>
+                    <li><a href="planner.html">House Planner</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Get in Touch Column -->
+            <div class="footer-col">
+                <h4>Get in Touch</h4>
+                <p>hello@plan2build.in</p>
+                <p>+91 98765 43210</p>
+                <p>150A, Kaliamman Koil Street, Virugambakkam, Chennai, Tamil Nadu 600092</p>
+                <a href="https://wa.me/919030663409" target="_blank" class="whatsapp-link">
+                    💬 Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Plan2Build. Community Service Project (CSP). All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

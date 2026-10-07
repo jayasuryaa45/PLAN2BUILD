@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Cost Estimator - Plan2Build</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🏗️ Plan2Build</a>
+            <ul class="nav-links" id="nav-links"></ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Construction Cost Estimator</h2>
+        <div class="form-group">
+            <label>Built-up Area (sq.ft):</label>
+            <input type="number" id="costArea" placeholder="e.g. 1200">
+        </div>
+        <div class="form-group">
+            <label>Material Cost per sq.ft (₹):</label>
+            <input type="number" id="matRate" value="1200">
+        </div>
+        <div class="form-group">
+            <label>Labour Cost per sq.ft (₹):</label>
+            <input type="number" id="labRate" value="600">
+        </div>
+        <div class="form-group">
+            <label>Other Expenses (₹):</label>
+            <input type="number" id="otherExp" placeholder="e.g. 50000">
+        </div>
+        <button type="button" class="btn-primary" id="calcCostBtn">Calculate Total Cost</button>
+
+        <div id="costResultsBox" style="display:none; margin-top:2rem;">
+            <div class="cards-grid">
+                <div class="data-card"><h4>Material Cost</h4><div class="value" id="displayMatCost">₹ 0</div></div>
+                <div class="data-card"><h4>Labour Cost</h4><div class="value" id="displayLabCost">₹ 0</div></div>
+                <div class="data-card"><h4>Other Expenses</h4><div class="value" id="displayOtherExp">₹ 0</div></div>
+            </div>
+            <div class="data-card" style="margin-top:1rem; background: #e0f2fe; border-color: #0284c7;">
+                <h4>Total Estimated Cost</h4>
+                <div class="value" style="color:var(--primary); font-size: 1.8rem;" id="displayTotalCost">₹ 0</div>
+            </div>
+        </div>
+    </div>
+
+   <footer>
+        <div class="footer-container">
+            <!-- Brand Column -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span>P2B</span> Plan2Build
+                </div>
+                <p>Award-winning interior design studio transforming residential and commercial spaces across India. From concept to completion, we bring your vision to life.</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank" title="Instagram">📷</a>
+                    <a href="#" target="_blank" title="Pinterest">📌</a>
+                    <a href="#" target="_blank" title="LinkedIn">💼</a>
+                    <a href="#" target="_blank" title="YouTube">▶️</a>
+                </div>
+            </div>
+
+            <!-- Company Links Column -->
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="guide.html">Our Process / Guide</a></li>
+                    <li><a href="cost.html">Pricing Guide</a></li>
+                    <li><a href="planner.html">House Planner</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Get in Touch Column -->
+            <div class="footer-col">
+                <h4>Get in Touch</h4>
+                <p>hello@plan2build.in</p>
+                <p>+91 98765 43210</p>
+                <p>150A, Kaliamman Koil Street, Virugambakkam, Chennai, Tamil Nadu 600092</p>
+                <a href="https://wa.me/919030663409" target="_blank" class="whatsapp-link">
+                    💬 Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Plan2Build. Community Service Project (CSP). All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remodeling Planner - Plan2Build</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">🏗️ Plan2Build</a>
+            <ul class="nav-links" id="nav-links"></ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Remodel Your Existing Home</h2>
+        <div class="form-group">
+            <label>Approximate Area for Remodeling (sq.ft):</label>
+            <input type="number" id="remodelArea" value="400">
+        </div>
+
+        <label style="margin-bottom:0.5rem; display:block;">Select Remodeling Work:</label>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.8rem; margin-bottom: 1.5rem;">
+            <label><input type="checkbox" name="remodelOption" value="Kitchen Remodeling" data-rate="400"> Kitchen Remodeling</label>
+            <label><input type="checkbox" name="remodelOption" value="Bathroom Remodeling" data-rate="350"> Bathroom Remodeling</label>
+            <label><input type="checkbox" name="remodelOption" value="Flooring" data-rate="150"> Flooring</label>
+            <label><input type="checkbox" name="remodelOption" value="Painting" data-rate="30"> Painting</label>
+            <label><input type="checkbox" name="remodelOption" value="Doors & Windows" data-rate="250"> Doors & Windows</label>
+            <label><input type="checkbox" name="remodelOption" value="Electrical Work" data-rate="80"> Electrical Work</label>
+            <label><input type="checkbox" name="remodelOption" value="Plumbing Work" data-rate="90"> Plumbing Work</label>
+        </div>
+
+        <button type="button" class="btn-primary" id="calcRemodelBtn">Calculate Remodeling Cost</button>
+
+        <div id="remodelResultBox" style="display:none; margin-top:2rem;">
+            <h3>Selected Work Breakdown</h3>
+            <ul id="remodelList" style="margin-left: 1.5rem; margin-bottom: 1rem;"></ul>
+            <div class="data-card" style="background: #e2e8f0;">
+                <h4>Total Remodeling Cost</h4>
+                <div class="value" id="displayRemodelTotal" style="color:var(--accent);">₹ 0</div>
+            </div>
+        </div>
+    </div>
+
+  <footer>
+        <div class="footer-container">
+            <!-- Brand Column -->
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span>P2B</span> Plan2Build
+                </div>
+                <p>Award-winning interior design studio transforming residential and commercial spaces across India. From concept to completion, we bring your vision to life.</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank" title="Instagram">📷</a>
+                    <a href="#" target="_blank" title="Pinterest">📌</a>
+                    <a href="#" target="_blank" title="LinkedIn">💼</a>
+                    <a href="#" target="_blank" title="YouTube">▶️</a>
+                </div>
+            </div>
+
+            <!-- Company Links Column -->
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="guide.html">Our Process / Guide</a></li>
+                    <li><a href="cost.html">Pricing Guide</a></li>
+                    <li><a href="planner.html">House Planner</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Get in Touch Column -->
+            <div class="footer-col">
+                <h4>Get in Touch</h4>
+                <p>hello@plan2build.in</p>
+                <p>+91 98765 43210</p>
+                <p>150A, Kaliamman Koil Street, Virugambakkam, Chennai, Tamil Nadu 600092</p>
+                <a href="https://wa.me/919030663409" target="_blank" class="whatsapp-link">
+                    💬 Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Plan2Build. Community Service Project (CSP). All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
